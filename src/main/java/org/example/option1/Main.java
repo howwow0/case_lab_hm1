@@ -129,12 +129,11 @@ public class Main {
             System.out.println("Неверный ввод. Введите целое число.");
             in.next();
         }
-        ;
         return in.nextInt();
     }
 
     private static int inputSizeArray(Scanner in) {
-        int sizeArray = 0;
+        int sizeArray;
         while (!in.hasNextInt() || (sizeArray = in.nextInt()) <= 0) {
             System.out.println("Неверный ввод. Введите целое число больше нуля.");
             in.next();
@@ -190,5 +189,4 @@ public class Main {
         }
     }
 
-    //DRY курит в сторонке
 }
